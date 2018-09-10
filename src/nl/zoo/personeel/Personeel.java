@@ -3,7 +3,7 @@ package nl.zoo.personeel;
 public class Personeel {
     private String name;
     private String functie;
-    private int employeenumber;
+    private int employeeNumber;
 
     public void setFunctie(String functie) {
         this.functie=functie;
@@ -17,10 +17,10 @@ public class Personeel {
     public String getName() {
         return this.name;
     }
-    public void setEmployeenumber(int employeenumber) {
-        this.employeenumber = employeenumber;
+    public void setEmployeeNumber(int employeeNumber) {
+        this.employeeNumber = employeeNumber;
     }
-    public int getEmployeenumber() {
-        return this.employeenumber;
+    public int getEmployeeNumber() {
+        return this.employeeNumber;
     }
 }
