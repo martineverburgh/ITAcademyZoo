@@ -1,6 +1,6 @@
 package nl.zoo.food;
 
-public class food {
+public class Food {
     private String brand;
     private String supplier;
     private String animal;
