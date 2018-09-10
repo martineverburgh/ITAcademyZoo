@@ -1,7 +1,10 @@
 import nl.zoo.animal.Animal;
 import nl.zoo.food.Food;
+import nl.zoo.materials.*;
 
 public class ZooApplication {
+
+
     public static void main(String[] args) {
         Animal lion = new Animal();
         lion.setName("test");
@@ -20,9 +23,11 @@ public class ZooApplication {
         System.out.println(brok.getAnimal());
         System.out.println(brok.getSupplier());
 
-        }
-
+        Cage cage = new Cage(12, 23, 43);
+        System.out.println(cage.toString());
 
     }
+
+}
 
 
