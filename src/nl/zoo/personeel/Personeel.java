@@ -5,6 +5,8 @@ public class Personeel {
     private String functie;
     private int employeeNumber;
 
+    //default constructor zinvol of niet? verplichtingsregels afdwingen?
+
     public void setFunctie(String functie) {
         this.functie=functie;
     }
