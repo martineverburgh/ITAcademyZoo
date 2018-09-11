@@ -1,7 +1,6 @@
 import nl.zoo.animal.Animal;
 import nl.zoo.food.Food;
 import nl.zoo.materials.*;
-
 import nl.zoo.visitors.Visitor;
 import nl.zoo.visitors.VisitorList;
 
@@ -12,13 +11,9 @@ public class ZooApplication {
     public static void main(String[] args) {
         boolean running = true;
 
-        System.out.println(Visitor.getAmountOfVisitorsInstantiated());
         System.out.println("Welome to our Zoo!");
         VisitorList visitorList = new VisitorList();
         visitorList.printVisitors();
-        System.out.println(Visitor.getAmountOfVisitorsInstantiated());
-        Visitor vis = new Visitor("H", "J", 3);
-        System.out.println(vis.getAgeTimesSix());
 
         Animal lion = new Animal();
         lion.setName("test");
