@@ -31,6 +31,11 @@ public class Visitor {
         return age;
     }
 
+    public int getAgeTimesSix(){
+        int age = getAge();
+        return (age * 6);
+    }
+
     public void setAge(int age) {
         this.age = age;
     }
