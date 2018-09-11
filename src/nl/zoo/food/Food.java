@@ -5,6 +5,24 @@ public class Food {
     private String supplier;
     private String animal;
     private int amount;
+    private static int amountFoodsCreated;
+
+    //
+//    static {
+//        amountFoodsCreated = 0;
+//    }
+//
+//    {
+//        amountFoodsCreated++;
+//    }
+
+    public Food() {
+        amountFoodsCreated++;
+    }
+
+    public static int getAmountFoodsCreated() {
+        return amountFoodsCreated;
+    }
 
     public String getBrand() {
         return brand;

@@ -29,6 +29,12 @@ public class ZooApplication {
         System.out.println(brok.getAnimal());
         System.out.println(brok.getSupplier());
 
+        Food vlees = new Food();
+        Food bix = new Food();
+
+
+        System.out.println("Aantal Food instanties = " +Food.getAmountFoodsCreated());
+
         Cage cage = new Cage(12, 23, 43);
         System.out.println(cage.toString());
     }

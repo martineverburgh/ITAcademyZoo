@@ -6,6 +6,8 @@ public class Animal {
     private boolean sex;
     private String color;
 
+
+
     public String getName() {
         return name;
     }
