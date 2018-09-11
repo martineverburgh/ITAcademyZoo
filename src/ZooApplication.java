@@ -40,18 +40,24 @@ public class ZooApplication {
             visitorList.showOptions();
             String input = reader.next();
 
-            switch(input) {
-                case "1": visitorList.addNewVisitor();
-                break;
-                case "2": visitorList.deleteVisitor();
-                break;
-                case "3": visitorList.printVisitors();
-                break;
-                case "bye": System.out.println(""); running = false;
-                break;
-                default: System.out.println("Choose option 1, 2 or 3 please...");
+            switch (input) {
+                case "1":
+                    visitorList.addNewVisitor();
+                    break;
+                case "2":
+                    visitorList.deleteVisitor();
+                    break;
+                case "3":
+                    visitorList.printVisitors();
+                    break;
+                case "bye":
+                    System.out.println("");
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Choose option 1, 2 or 3 please...");
             }
         }
         reader.close();
-  }
+    }
 }

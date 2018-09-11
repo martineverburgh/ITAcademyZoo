@@ -56,12 +56,12 @@ public class VisitorList {
         Scanner reader = new Scanner(System.in);
         System.out.println("Choose the corresponding number of the visitor you want to delete.");
         int number = reader.nextInt();
-        Visitor visitor = visitorList.get(number-1);
+        Visitor visitor = visitorList.get(number - 1);
         visitorList.remove(visitor);
         System.out.println("Visitor " + visitor.getFirstName() + " " + visitor.getLastName() + " was removed from the visitor list");
     }
 
-    public void showOptions(){
+    public void showOptions() {
         System.out.println("Choose your action:");
         System.out.println("1.  Add a new visitor");
         System.out.println("2.  Delete a visitor");
